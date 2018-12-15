@@ -1,12 +1,8 @@
 import React from 'react'
-import {createAppContainer, createStackNavigator} from 'react-navigation'
-import LoginScreen from './screens/homeScreen'
-import HomeScreen from './screens/loginScreen'
+import {View, Text} from 'react-native'
 
-const RootStack  = createStackNavigator({
-  Login: LoginScreen,
-  //Home: HomeScreen
-})
-
-const App = createAppContainer(RootStack)
-export default App
+export default ()=>(
+  <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+    <Text style={{fontSize:30}}>Happy Hacking 😎✌️</Text>
+  </View>
+)
